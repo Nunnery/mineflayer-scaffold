@@ -382,6 +382,7 @@ function inject(bot) {
       return toolMultipliers[b.type] - toolMultipliers[a.type];
     });
     var tool = tools[0];
+    console.log('Equipping tool: ' + tool);
     if (!tool) return true;
     if (bot.heldItem && bot.heldItem.type === tool.type) return true;
     var done = false;
